@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Personal Website</title>
+</head>
+
+<body>
+
+    <h1>Contact Me</h1>
+
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="project.html">Project</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+    <h2>Informasi Kontak</h2>
+
+    <p>
+        Jika Anda ingin berdiskusi atau bekerja sama,
+        silakan hubungi saya melalui form berikut.<br>
+        Anda juga dapat mengirim email ke emailanda@gmail.com.
+    </p>
+
+    <h2>Form Pesan</h2>
+
+    <form action="#" method="post">
+
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th colspan="2">Form Data Kontak</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <th>
+                        <label for="nama">Nama Lengkap:</label>
+                    </th>
+                    <td>
+                        <input type="text"
+                               id="nama"
+                               name="nama"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="email">Email:</label>
+                    </th>
+                    <td>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="telepon">Nomor Telepon:</label>
+                    </th>
+                    <td>
+                        <input type="text"
+                               id="telepon"
+                               name="telepon">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Jenis Kelamin:</th>
+                    <td>
+                        <input type="radio"
+                               id="laki-laki"
+                               name="jenis_kelamin"
+                               value="L">
+
+                        <label for="laki-laki">Laki-laki</label>
+
+                        <input type="radio"
+                               id="perempuan"
+                               name="jenis_kelamin"
+                               value="P">
+
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    </th>
+                    <td>
+                        <input type="date"
+                               id="tanggal-lahir"
+                               name="tanggal_lahir">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="topik">Topik Pesan:</label>
+                    </th>
+                    <td>
+                        <select id="topik" name="topik">
+                            <option value="diskusi">Diskusi</option>
+                            <option value="kerja-sama">Kerja Sama</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Jenis Pesan:</th>
+                    <td>
+                        <input type="radio"
+                               id="pertanyaan"
+                               name="jenis_pesan"
+                               value="pertanyaan">
+
+                        <label for="pertanyaan">Pertanyaan</label>
+
+                        <input type="radio"
+                               id="saran"
+                               name="jenis_pesan"
+                               value="saran">
+
+                        <label for="saran">Saran</label>
+
+                        <input type="radio"
+                               id="lainnya"
+                               name="jenis_pesan"
+                               value="lainnya">
+
+                        <label for="lainnya">Lainnya</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="pesan">Pesan:</label>
+                    </th>
+                    <td>
+                        <textarea id="pesan"
+                                  name="pesan"
+                                  rows="6"
+                                  cols="40"
+                                  required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Salinan Pesan:</th>
+                    <td>
+                        <input type="checkbox"
+                               id="salinan"
+                               name="salinan"
+                               value="ya">
+
+                        <label for="salinan">
+                            Kirim salinan pesan ke email saya
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Kirim Pesan</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </form>
+
+    <p>
+        <em>
+            Catatan: karena website ini hanya menggunakan HTML,
+            form belum terhubung ke server/database.
+        </em>
+    </p>
+
+    <hr>
+
+    <p>
+        <a href="home.html">Kembali ke Home</a>
+    </p>
+
+    <p>&copy; 2026 Zhafira Alfiyya Tabriz.</p>
+
+</body>
+
+</html>
