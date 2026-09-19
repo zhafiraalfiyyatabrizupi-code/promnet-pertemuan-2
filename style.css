@@ -1416,3 +1416,133 @@ button:hover {
     }
 
 }
+
+.social-page {
+    background-color: #edfaa6;
+    color: #6d2163;
+    font-family: Georgia, serif;
+    text-align: center;
+    padding: 25px;
+}
+
+.social-page h1 {
+    color: #a75d68;
+    font-size: 34px;
+    margin: 20px 0;
+    animation: judulSocial 2s ease-in;
+}
+
+.social-page h2 {
+    color: #b66a76;
+    font-size: 26px;
+    margin: 25px 0 10px;
+}
+
+.social-page p {
+    color: #70524b;
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.social-list li {
+    list-style-position: inside;
+    background-color: #fff4c7;
+    width: 230px;
+    padding: 18px;
+    margin: 10px;
+    border: 2px solid #d9a6a6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(180, 130, 120, 0.2);
+    transition: 0.3s;
+    
+    animation: gerakSocial 3s ease-in-out infinite;
+}
+
+.social-list li:hover {
+    background-color: #f3b9c1;
+    color: #6e4148;
+    transform: translateY(-8px);
+    font-weight: bold;
+}
+
+.social-list a {
+    text-decoration: none;
+    color: #a75d68;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.social-list a:hover {
+    color: #6d2163;
+    font-weight: bold;
+}
+
+@keyframes judulSocial {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gerakSocial {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .social-list {
+        width: 95%;
+    }
+
+    .social-list li {
+        width: 200px;
+    }
+
+    .social-page h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-page {
+        padding: 15px;
+    }
+
+    .social-list li {
+        width: 90%;
+    }
+
+    .social-page h1 {
+        font-size: 24px;
+    }
+
+    .social-page h2 {
+        font-size: 21px;
+    }
+}
